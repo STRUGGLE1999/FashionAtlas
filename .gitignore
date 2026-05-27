@@ -1,0 +1,9 @@
+.DS_Store
+.codex/
+.env
+.env.local
+node_modules/
+dist/
+.vercel/
+.netlify/
+npm-debug.log*

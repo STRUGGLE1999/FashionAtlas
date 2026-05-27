@@ -1,0 +1,17 @@
+{
+  "name": "fashion-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A curated fashion learning archive for enthusiasts.",
+  "scripts": {
+    "dev": "python3 -m http.server 4173",
+    "check": "node --check app.js && node --check api/ai.js && node --check netlify/functions/ai.js && node scripts/predeploy-check.js",
+    "check:syntax": "node --check app.js && node --check api/ai.js && node --check netlify/functions/ai.js",
+    "deploy:check": "npm run check",
+    "deploy:archive": "npm run check && node scripts/create-deploy-archive.js",
+    "deploy:verify": "node scripts/verify-deployed-site.js",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir=.",
+    "start": "python3 -m http.server 4173"
+  }
+}
