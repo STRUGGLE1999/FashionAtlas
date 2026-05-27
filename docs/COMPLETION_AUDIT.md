@@ -29,12 +29,13 @@
 | 基础检查通过 | `npm run check` 通过：语法检查 + `scripts/predeploy-check.js` 产品验收检查。 |
 | 部署前机器自检 | `scripts/predeploy-check.js` 检查资源数、推荐清单、趋势来源、中文导航、官方来源策略、AI 目标选择、风格研究页和部署配置。 |
 | 部署交付包 | `npm run deploy:archive` 已生成 `dist/fashionatlas-deploy.zip`，压缩包包含静态页面、Vercel/Netlify 配置、AI serverless 函数、部署文档和验收脚本。 |
+| 本地 Git 仓库 | 已初始化本地 Git 仓库，当前分支为 `main`，初始提交为 `e96ce0e Initial FashionAtlas project`。 |
 
 ## 未完成/外部依赖
 
 | 计划项 | 当前状态 | 需要什么 |
 | --- | --- | --- |
-| 部署到 Vercel/Netlify 并拿公开 URL | 尚未完成。当前环境不是 Git 仓库，没有 `gh`、`vercel` 或 `netlify` CLI，且部署需要用户账号、仓库或平台授权。项目已提供 `vercel.json`、`netlify.toml`、`npm run deploy:check`、`npm run deploy:archive`、`npm run deploy:verify`、`npm run deploy:vercel`、`npm run deploy:netlify`。 | 用户提供/确认 GitHub 仓库和 Vercel/Netlify 登录权限，或按 `docs/DEPLOYMENT.md` 上传 `dist/fashionatlas-deploy.zip` / 导入仓库部署。 |
+| 部署到 Vercel/Netlify 并拿公开 URL | 尚未完成。当前环境已有本地 Git 仓库，但没有远端仓库，没有 `gh`、`vercel` 或 `netlify` CLI，且部署需要用户账号、仓库或平台授权。项目已提供 `vercel.json`、`netlify.toml`、`npm run deploy:check`、`npm run deploy:archive`、`npm run deploy:verify`、`npm run deploy:vercel`、`npm run deploy:netlify`。 | 用户提供/确认 GitHub 仓库和 Vercel/Netlify 登录权限，或按 `docs/DEPLOYMENT.md` 上传 `dist/fashionatlas-deploy.zip` / 导入仓库部署。 |
 | 配置真实 `OPENAI_API_KEY` 并线上测试 AI | 尚未完成。代码已支持 Vercel/Netlify serverless，但没有线上环境变量。 | 在线上平台配置 `OPENAI_API_KEY` 和可选 `OPENAI_MODEL` 后测试 `#/ai`。 |
 
 ## 当前结论
