@@ -30,6 +30,7 @@
 | 部署前机器自检 | `scripts/predeploy-check.js` 检查资源数、推荐清单、趋势来源、中文导航、官方来源策略、AI 目标选择、风格研究页和部署配置。 |
 | 部署交付包 | `npm run deploy:archive` 已生成 `dist/fashionatlas-deploy.zip`，压缩包包含静态页面、Vercel/Netlify 配置、AI serverless 函数、部署文档和验收脚本。 |
 | 本地 Git 仓库 | 已初始化本地 Git 仓库，当前分支为 `main`，初始提交为 `e96ce0e Initial FashionAtlas project`。 |
+| 远端仓库配置说明 | `docs/GIT_REMOTE_SETUP.md` 已补充 GitHub 空仓库创建、`origin` 配置、`main` 分支推送和部署后验收步骤。 |
 
 ## 未完成/外部依赖
 

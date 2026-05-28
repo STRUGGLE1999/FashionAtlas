@@ -3,6 +3,8 @@
 ## 推荐方案
 优先使用 Vercel 或 Netlify，因为它们可以同时托管静态页面和 AI serverless function。
 
+如果还没有配置 GitHub 远端仓库，先看 [Git 远端仓库配置说明](./GIT_REMOTE_SETUP.md)。
+
 ## 部署前检查
 本地先运行：
 
