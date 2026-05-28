@@ -1354,11 +1354,16 @@ function renderHome() {
           <a class="secondary-button" href="#/guides">全部推荐清单</a>
         </div>
         <div class="feature-grid">
-          <article class="feature-card">
+          <article class="feature-card guide-feature">
             <span class="meta-chip strong">${todayGuide.level}</span>
             <h3><a href="#/guide/${todayGuide.id}">${todayGuide.title}</a></h3>
             <p>${todayGuide.summary}</p>
             <div class="mini-meta">${todayGuide.types.map((type) => `<span class="tag">${type}</span>`).join("")}</div>
+            <div class="mini-roadmap" aria-label="入门学习步骤">
+              <span>01 先建立词汇</span>
+              <span>02 再看秀场叙事</span>
+              <span>03 最后整理灵感</span>
+            </div>
             <a class="primary-button" href="#/guide/${todayGuide.id}">开始阅读</a>
           </article>
           ${weeklyTrends.map((trend) => `

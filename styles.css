@@ -480,6 +480,25 @@ h3 {
   color: var(--muted);
 }
 
+.feature-card > a {
+  margin-top: auto;
+}
+
+.mini-roadmap {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 18px;
+}
+
+.mini-roadmap span {
+  border-left: 2px solid var(--ink);
+  background: rgba(255, 255, 255, 0.58);
+  color: #3f3f46;
+  font-family: var(--font-ui-cn);
+  font-size: 13px;
+  padding: 8px 10px;
+}
+
 .resource-card {
   display: flex;
   min-height: 290px;
