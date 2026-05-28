@@ -1319,7 +1319,7 @@ function renderHome() {
   shell(`
     <section class="hero">
       <div class="hero-copy">
-        <span class="eyebrow">Fashion Learning 60% · Trend Notes 40%</span>
+        <span class="eyebrow">Curated Fashion · Clearer Taste</span>
         <h1 class="hero-title"><span>在灵感里</span><span>看懂时尚</span></h1>
         <p class="lead">FashionAtlas 面向中文时尚爱好者，把书籍、影片、秀场、杂志和中国日常穿搭趋势整理成可执行的推荐清单。先找到值得看的内容，再慢慢形成自己的审美判断。</p>
         <form class="search-panel" id="homeSearch">
