@@ -1337,6 +1337,10 @@ function renderHome() {
           <div class="proof-item"><strong>${resources.length}</strong><span>底层资源</span></div>
           <div class="proof-item"><strong>4</strong><span>书/影/刊/秀</span></div>
         </div>
+        <div class="hero-collage" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="" />
+          <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=80" alt="" />
+        </div>
       </div>
       <div class="hero-visual" aria-hidden="true"></div>
     </section>

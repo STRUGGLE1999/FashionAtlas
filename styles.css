@@ -788,6 +788,31 @@ code {
   font-weight: 700;
 }
 
+.hero-collage {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.hero-collage img {
+  display: block;
+  width: 100%;
+  height: clamp(118px, 13vw, 168px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: cover;
+  filter: saturate(0.9) contrast(0.96);
+}
+
+.hero-collage img:first-child {
+  object-position: center 34%;
+}
+
+.hero-collage img:last-child {
+  object-position: center 22%;
+}
+
 .site-footer p {
   margin: 4px 0 0;
 }
@@ -848,6 +873,7 @@ code {
   .path-grid,
   .topic-grid,
   .proof-strip,
+  .hero-collage,
   .suggestion-grid,
   .case-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -866,10 +892,15 @@ code {
   .path-grid,
   .topic-grid,
   .proof-strip,
+  .hero-collage,
   .suggestion-grid,
   .case-grid,
   .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-collage img {
+    height: 150px;
   }
 
   .section-head,
