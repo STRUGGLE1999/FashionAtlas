@@ -2,7 +2,15 @@
 
 一个面向中文时尚爱好者的全球时尚美学学习与资讯策展网页。它不只做资源跳转，而是用推荐清单、趋势解释、学习路径和灵感板帮助用户决定该看什么、为什么看、怎么看。MVP 采用静态单页应用实现，不需要安装依赖即可打开。
 
-## Open
+## Online
+
+线上访问地址：
+
+[https://classy-frangipane-caf975.netlify.app](https://classy-frangipane-caf975.netlify.app)
+
+当前站点由 GitHub 仓库 `STRUGGLE1999/FashionAtlas` 连接 Netlify 自动部署。推送到 `main` 分支后，Netlify 会自动发布新版本。
+
+## Open Locally
 
 直接在浏览器打开：
 
