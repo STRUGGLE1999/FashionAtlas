@@ -279,6 +279,9 @@ h3 {
 
 .search-panel {
   --search-button-width: 66px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--search-button-width);
+  gap: 10px;
   width: min(680px, 100%);
   margin-top: 34px;
   padding: 14px;
@@ -289,9 +292,7 @@ h3 {
 }
 
 .search-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) var(--search-button-width);
-  gap: 10px;
+  display: contents;
 }
 
 .search-input,
@@ -335,16 +336,21 @@ h3 {
 }
 
 .hint-list {
+  grid-column: 1;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
-  width: calc(100% - var(--search-button-width) - 10px);
-  margin-top: 12px;
+  min-width: 0;
 }
 
 .hint-list .pill {
   width: 100%;
   min-width: 0;
+  overflow: hidden;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-size: clamp(12px, 1.05vw, 14px);
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -938,6 +944,7 @@ code {
   }
 
   .hint-list {
+    grid-column: 1;
     width: 100%;
     grid-template-columns: 1fr;
   }
