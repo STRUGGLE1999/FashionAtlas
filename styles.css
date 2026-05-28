@@ -196,7 +196,7 @@ textarea,
   grid-column: 1 / 8;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: clamp(28px, 6vw, 76px) clamp(20px, 4vw, 52px);
 }
 
@@ -817,15 +817,18 @@ code {
 
 .hero-collage {
   display: grid;
+  flex: 1;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 12px;
   margin-top: 18px;
+  min-height: clamp(150px, 18vw, 240px);
 }
 
 .hero-collage img {
   display: block;
   width: 100%;
-  height: clamp(118px, 13vw, 168px);
+  height: 100%;
+  min-height: 100%;
   border: 1px solid var(--line);
   border-radius: 8px;
   object-fit: cover;
@@ -882,6 +885,10 @@ code {
     min-height: 0;
   }
 
+  .hero-copy {
+    justify-content: center;
+  }
+
   .hero-visual {
     min-height: 360px;
   }
@@ -904,6 +911,10 @@ code {
   .suggestion-grid,
   .case-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-collage {
+    flex: 0 0 auto;
   }
 }
 
@@ -933,6 +944,7 @@ code {
 
   .hero-collage img {
     height: 150px;
+    min-height: 150px;
   }
 
   .section-head,
