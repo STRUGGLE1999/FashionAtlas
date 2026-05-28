@@ -278,6 +278,7 @@ h3 {
 }
 
 .search-panel {
+  --search-button-width: 66px;
   width: min(680px, 100%);
   margin-top: 34px;
   padding: 14px;
@@ -289,7 +290,7 @@ h3 {
 
 .search-row {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) var(--search-button-width);
   gap: 10px;
 }
 
@@ -334,10 +335,17 @@ h3 {
 }
 
 .hint-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  width: calc(100% - var(--search-button-width) - 10px);
   margin-top: 12px;
+}
+
+.hint-list .pill {
+  width: 100%;
+  min-width: 0;
+  white-space: nowrap;
 }
 
 .hero-visual {
@@ -896,6 +904,11 @@ code {
   .suggestion-grid,
   .case-grid,
   .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hint-list {
+    width: 100%;
     grid-template-columns: 1fr;
   }
 
